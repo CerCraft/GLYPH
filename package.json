@@ -1,0 +1,27 @@
+{
+  "name": "glyph-screen-ocr",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline screen OCR extension for Chrome and Edge with Russian UI",
+  "scripts": {
+    "icons": "node scripts/generate-glyph-icons.js",
+    "build": "npm run icons && node scripts/build.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.326",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "esbuild": "^0.25.5",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  }
+}
